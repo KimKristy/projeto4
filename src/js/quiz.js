@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarPergunta()
   }
 
-  function reiniciarBotao(){
+  function reiniciarQuiz(){
     perguntas = 0
     respostas, length = 0 
     containerResultado.classList.add('hidden')
@@ -60,6 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarPergunta()
   }
   proximaPergunta.addEventListener('click', nextQuestao)
-  reiniciarBotao.addEventListener('click', reiniciarBotao)
+  reiniciarBotao.addEventListener('click', reiniciarQuiz)
   mostrarPergunta()
 });
